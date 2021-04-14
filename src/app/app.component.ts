@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dynamicdatapass';
+
+  public storedPost = [] as any;
+
+  onPostAdded(post: any) {
+    this.storedPost.push(post);
+  }
+
 }
